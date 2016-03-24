@@ -1,0 +1,44 @@
+h1,h2,h3,h4,h5,h6 {
+    color: #222;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+    font-weight: 200;
+}
+h1 {
+    font-size: 3em;
+    clear: left;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.4em;
+}
+
+html {
+    height: 100%;
+}
+body {
+    background: radial-gradient(circle, #fff, #eee, #aaa);
+    min-height: 100%;
+    height: 1px;
+}
+
+main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.centered {
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
