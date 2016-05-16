@@ -52,3 +52,77 @@ nav li {
     display: inline-block;
     margin: 0 1em 0 0;
 }
+
+img.icon {
+	width: 32px;
+	height: 32px;
+	background: url("../img/icons.png");
+	background-size: 700%; /* Because we got 7 icons. */
+	opacity: 0.8;
+	transition: opacity .3s ease-in-out;
+}
+img.icon:hover{
+	opacity: 1;
+}
+
+/* Background-position := 100/(nr.icons - 1)% */
+img.github        { background-position: 0%      0px; }
+img.stackexchange { background-position: 16.666% 0px; }
+img.launchpad     { background-position: 33.333% 0px; }
+img.youtube       { background-position: 50%     0px; }
+img.email         { background-position: 66.666% 0px; }
+img.mumble        { background-position: 83.333% 0px; }
+img.irc           { background-position: 100%    0px; }
+
+
+@media (max-width: 600px) {
+	h1 {
+    font-size: 2em;
+    margin: 20px;
+	}
+	h2 {
+    font-size: 1.5em;
+    margin: 20px;
+	}
+	img.icon {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+    font-size: 4em;
+    margin: 64px;
+	}
+	h2 {
+    font-size: 2.6em;
+    margin: 50px;
+	}
+	img.icon {
+		width: 50px;
+		height: 50px;
+	}
+	nav li {
+		margin: 0 1.5em 0 0;
+	}
+}
+
+
+@media (min-width: 2000px) {
+	h1 {
+    font-size: 6em;
+    margin: 64px;
+	}
+	h2 {
+    font-size: 4em;
+    margin: 64px;
+	}
+	img.icon {
+		width: 64px;
+		height: 64px;
+	}
+	nav li {
+		margin: 0 2em 0 0;
+	}
+}
